@@ -1,9 +1,7 @@
 # Author Saad Obaid ul Islam
 
 import pandas as pd
-from statistics import median
 import os
-from collections import Counter
 import glob
 from io_helper import get_csv_lines
 from io_helper import serialize
