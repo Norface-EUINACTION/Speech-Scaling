@@ -2,6 +2,8 @@
 Files related to member-level scaling to be here
 
 
-- [ ] Add Preprocessing scripts
+- [X] Add Preprocessing and Postprocessing scripts
   
 - [ ] Add Scaling scripts
+
+- [ ] Write How-to
