@@ -50,7 +50,7 @@ if __name__ == "__main__":
 
     parser = argparse.ArgumentParser()
 
-    base_path = "/ceph/sobaidul/data/party_scaling/scaling_party"
+    base_path = ...
     
     parser.add_argument('country', type=str,
                         help='Country name with more that one token should be separated with underscore, e.g. united_kingdom')
