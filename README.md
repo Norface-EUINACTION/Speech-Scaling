@@ -12,7 +12,7 @@ Files related to member-level scaling to be here
 
 # Introduction
 
-This repository contains code for reproducing the politican-level scaling for 28 European countries and the European Parliament. A list of the relevant European countries can be found on the ParlEE Plenary Speeches Harvard Dataverse page [here](https://dataverse.harvard.edu/dataverse/ParlEE). 
+This repository contains code for reproducing the politican-level scaling of political speeches from the national parliaments of 28 European countries and the European Parliament. A list of the relevant European countries can be found on the ParlEE Plenary Speeches Harvard Dataverse page [here](https://dataverse.harvard.edu/dataverse/ParlEE). 
 
 # Dependencies
  + python 3.10
