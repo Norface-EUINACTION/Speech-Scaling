@@ -12,7 +12,7 @@ Files related to member-level scaling to be here
 
 # Introduction
 
-This repository contains code for reproducing the member of parliament level scaling for each EU country. You can find the countries on the harvard dataverse [here](https://dataverse.harvard.edu/dataverse/ParlEE). 
+This repository contains code for reproducing the politican-level scaling for 28 European countries and the European Parliament. A list of the relevant European countries can be found on the ParlEE Plenary Speeches Harvard Dataverse page [here](https://dataverse.harvard.edu/dataverse/ParlEE). 
 
 # Dependencies
  + python 3.10
@@ -25,7 +25,7 @@ This repository contains code for reproducing the member of parliament level sca
 
 
 # How to
-1. First step is to combine the text from the european parliament and the national parliament and add EP (european parliament) and NP (national parliament) columns. This can be done by running the following code.
+1. As the nature of the research focused on comparisions between politican and political parties in European national parliaments and the European Parliament, the first step is to combine text by country from both the European Parliament and the national parliament. A clarifying column is also added to denote the text source either EP (European Parliament) or NP (national parliament). This can be done by running the following code.
 
 ```
 df = pd.read_csv('<path-to-EP-partyfacts-file>/filename.csv', sep=',')
