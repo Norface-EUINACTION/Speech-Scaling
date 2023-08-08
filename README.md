@@ -1,4 +1,4 @@
-# Member-level-Scaling
+# Politican and Party-level-Scaling
 Files related to member-level scaling to be here
 
 ### To do
