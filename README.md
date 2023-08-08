@@ -1,5 +1,5 @@
 # Politican and Party-level-Scaling
-Files related to member-level scaling to be here
+This folder contains files to reproduce the politican and political party level scaling for 28 European parliaments and the European Parliment.
 
 ### To do
 - [X] Add Preprocessing and Postprocessing scripts
