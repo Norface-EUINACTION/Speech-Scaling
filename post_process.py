@@ -35,7 +35,7 @@ def main(args: argparse.Namespace) -> None:
       split_names = split_file_names(i)
       #print(split_names)
       #break
-      country = split_names[0]
+      country = split_names[0] #country, cab, pol_area will require change in indicies based on the path you provide
       cab = split_names[1]
       pol_area = split_names[2]
 
