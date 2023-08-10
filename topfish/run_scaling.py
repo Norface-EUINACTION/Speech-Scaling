@@ -10,7 +10,7 @@ def main(args: argparse.Namespace) -> None:
 	print ("Starting scaling....")
 	for arg in args:
 		print('Scaling for ' + arg)
-		os.system("python run_scaler_mps.py {} multi no".format(arg))
+		os.system("python run_scaler_mps_party.py {} multi no".format(arg))
 		print('Scaling Finished for ' + arg + '\n')
 		print('-----------------------------------------------------------------------------')
 
