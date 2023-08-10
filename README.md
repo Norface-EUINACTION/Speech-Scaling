@@ -48,7 +48,7 @@ Next step is to edit the data structure in line 64 in the *pre_process.py* file.
 for idx, i in enumerate(list(combine_df.columns)):
   print(str(idx) + " " + str(i))
 ```
-2. **Preprocess:** We need to split the country csv file in the right format and build a hierarchy of directories. First step is to run the *pre_process.py* by running the command `python pre_process.py --path <path-to-country-file> --countries <country-name>`.
+2. **Preprocess:** We need to split the country csv file in the right format and build a hierarchy of directories. First step is to run the *pre_process_politician.py* by running the command `python3 pre_process_politician.py --path <path-to-country-file> --countries <country-name>`.
 This will create a directory structure as follows:
 ```
 country
@@ -69,7 +69,7 @@ country
      ├── ....
 .....
 ```
-3.  **Scaling:** Code for scaling is taken from the original [topfish](https://github.com/codogogo/topfish) repository and modified. First, add the `base_path` in line 53 in the file `topfish/run_scaler_mps.py`. The base path is where the directories created above are stored. Now run `run_scaling.py` by running the command `python run_scaling --countries <country-name>`. After the scaling, the directory will have two new files, called `<cabinet>-<policy_area>-scores.txt` and `<cabinet>-<policy_area>-scores-standard.txt` which contain scaled scores of all the MPs in input_files. The directory structure will look as follows now:
+3.  **Scaling:** Code for scaling is taken from the original [topfish](https://github.com/codogogo/topfish) repository and modified. First, add the `base_path` in line 53 in the file `topfish/run_scaler_mps.py`. The base path is where the directories created above are stored. Now run `run_scaling.py` by running the command `python2 run_scaling --countries <country-name>`. After the scaling, the directory will have two new files, called `<cabinet>-<policy_area>-scores.txt` and `<cabinet>-<policy_area>-scores-standard.txt` which contain scaled scores of all the MPs in input_files. The directory structure will look as follows now:
 ```
 country
 ├── <cabinet_name>
@@ -92,7 +92,7 @@ country
 .....
 ```
 
-4. **Post-process:** The last step is optional if you want scaling results in a nice clean csv file. To do this, run the *post_process.py* `python post_process.py --path <path-to-country-file> --countries <country-name>` which will combine the results of all the scaling in one csv file with columns `Cabinet, Speaker, Policyarea, partyfacts, scaled_score`.
+4. **Post-process:** The last step is optional if you want scaling results in a nice clean csv file. To do this, run the *post_process_politician.py* `python3 post_process.py --path <path-to-country-file> --countries <country-name>` which will combine the results of all the scaling in one csv file with columns `Cabinet, Speaker, Policyarea, partyfacts, scaled_score`.
 
 
 # Citations
