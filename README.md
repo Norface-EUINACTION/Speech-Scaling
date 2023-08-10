@@ -69,7 +69,7 @@ country
      ├── ....
 .....
 ```
-3.  **Scaling:** Code for scaling is taken from the original [topfish](https://github.com/codogogo/topfish) repository and modified. First, add the `base_path` in line 53 in the file `topfish/run_scaler_mps.py`. The base path is where the directories created above are stored. Now run `run_scaling.py` by running the command `python2 run_scaling --countries <country-name>`. After the scaling, the directory will have two new files, called `<cabinet>-<policy_area>-scores.txt` and `<cabinet>-<policy_area>-scores-standard.txt` which contain scaled scores of all the MPs in input_files. The directory structure will look as follows now:
+3.  **Scaling:** Code for scaling is taken from the original [topfish](https://github.com/codogogo/topfish) repository and modified. First, add the `base_path` in line 53 in the file `topfish/run_scaler_mps_party.py`. The base path is where the directories created above are stored. Now run `run_scaling.py` by running the command `python2 run_scaling --countries <country-name>`. After the scaling, the directory will have two new files, called `<cabinet>-<policy_area>-scores.txt` and `<cabinet>-<policy_area>-scores-standard.txt` which contain scaled scores of all the MPs in input_files. The directory structure will look as follows now:
 ```
 country
 ├── <cabinet_name>
@@ -120,7 +120,7 @@ country
      ├── ....
 .....
 ```
-3.  **Scaling:** Code for scaling is taken from the original [topfish](https://github.com/codogogo/topfish) repository and modified. First, add the `base_path` in line 53 in the file `topfish/run_scaler_mps.py`. The base path is where the directories created above are stored. Now run `run_scaling.py` by running the command `python3 run_scaling --countries <country-name>`. After the scaling, the directory will have two new files, called `<cabinet>-<policy_area>-scores.txt` and `<cabinet>-<policy_area>-scores-standard.txt` which contain scaled scores of all the MPs in input_files. The directory structure will look as follows now:
+3.  **Scaling:** Code for scaling is taken from the original [topfish](https://github.com/codogogo/topfish) repository and modified. First, add the `base_path` in line 53 in the file `topfish/run_scaler_mps_party.py`. The base path is where the directories created above are stored. Now run `run_scaling.py` by running the command `python3 run_scaling --countries <country-name>`. After the scaling, the directory will have two new files, called `<cabinet>-<policy_area>-scores.txt` and `<cabinet>-<policy_area>-scores-standard.txt` which contain scaled scores of all the MPs in input_files. The directory structure will look as follows now:
 ```
 country
 ├── <cabinet_name>
