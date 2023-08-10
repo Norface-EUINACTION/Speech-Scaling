@@ -97,7 +97,7 @@ country
 
 # How-to Party Level Scaling
 
-For party-level scaling, we do not need to combine data from the EP with the national parliament data. Here, we simple proceed with the *pre-processing* script. The pre-processing script first drops any row without the `partyfacts` ID and then proceeds with splitting the country csv file.  
+For party-level scaling, we do not need to combine data from the EP with the national parliament data. Here, we simply proceed with the *pre-processing* script. The pre-processing script first drops any row without the `partyfacts` ID and then proceeds with splitting the country csv file.  
 
 1. **Preprocess:** We need to split the country csv file in the right format and build a hierarchy of directories. First step is to run the *pre_process_party.py* by running the command `python3 pre_process_party.py --path <path-to-country-file> --countries <country-name>`.
 This will create a directory structure as follows:
