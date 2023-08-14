@@ -1,18 +1,9 @@
 # Politican and Party-level-Scaling
 This folder contains files to reproduce the politican and political party level scaling for 28 European parliaments and the European Parliment.
 
-### To do
-- [X] Add Preprocessing and Postprocessing scripts
-  
-- [X] Add Scaling scripts
-
-- [X] Dependencies
-      
-- [X] Write How-to
-
 # Introduction
 
-This repository contains code for reproducing the politican-level scaling of political speeches from the national parliaments of 28 European countries and the European Parliament. A list of the relevant European countries can be found on the ParlEE Plenary Speeches Harvard Dataverse page [here](https://dataverse.harvard.edu/dataverse/ParlEE). 
+This repository contains code for reproducing the politican-level and party-level scaling of political speeches from the national parliaments of 28 European countries and the European Parliament. A list of the relevant European countries can be found on the ParlEE Plenary Speeches Harvard Dataverse page [here](https://dataverse.harvard.edu/dataverse/ParlEE). 
 
 # Dependencies
  + python 3.10
@@ -97,7 +88,7 @@ country
 
 # How-to Party Level Scaling
 
-For party-level scaling, we do not need to combine data from the EP with the national parliament data. Here, we simply proceed with the *pre-processing* script. The pre-processing script first drops any row without the `partyfacts` ID and then proceeds with splitting the country csv file.  
+We further sought to explore scaled variation at the unit of political parties. For this party-level scaling, we do not need to combine data from the EP with the national parliament data, as we focused solely on domestic-level political parties. Here, we simply proceed with the *pre-processing* script. The pre-processing script first drops any row without the `partyfacts` ID and then proceeds with splitting the country csv file.  
 
 1. **Preprocess:** We need to split the country csv file in the right format and build a hierarchy of directories. First step is to run the *pre_process_party.py* by running the command `python3 pre_process_party.py --path <path-to-country-file> --countries <country-name>`.
 This will create a directory structure as follows:
@@ -144,10 +135,5 @@ country
 ```
 
 4. **Post-process:** The last step is optional if you want scaling results in a nice clean csv file. To do this, run the *post_process_party.py* `python3 post_process_party.py --path <path-to-country-file> --countries <country-name>` which will combine the results of all the scaling in one csv file with columns `Cabinet, Policyarea, partyfacts, scaled_score`.
-
-
-# Citations
-
-  
 
 
